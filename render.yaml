@@ -1,6 +1,7 @@
 services:
   - type: web
     name: jopfoundation-api
+    plan: free
     runtime: node
     rootDir: server
     buildCommand: npm ci
@@ -22,6 +23,7 @@ services:
 
   - type: web
     name: jopfoundation-web
+    plan: free
     runtime: node
     rootDir: client
     buildCommand: npm ci && npm run build
